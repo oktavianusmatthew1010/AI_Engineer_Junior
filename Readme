@@ -70,7 +70,7 @@ Use word embeddings such as:
 
 ---
 
-##  Section 3: Reasoning & Explainability (20%)
+## 💡 Section 3: Reasoning & Explainability (20%)
 
 Answer the following questions briefly in a file named `explanation.md`:
 
@@ -99,5 +99,3 @@ Include your answer in `explanation.md`.
 - Recommended libraries:
   ```bash
   pip install pandas scikit-learn numpy matplotlib nltk
-
-## Please Share the github Repo
