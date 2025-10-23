@@ -1,0 +1,103 @@
+#  Junior AI Engineer Technical Test
+
+Welcome to the **Junior AI Engineer Technical Assessment**!  
+This test is designed to evaluate your practical skills in data preprocessing, model training, reasoning, and deployment awareness.
+
+---
+
+##  Overview
+
+**Objective:**  
+Build a simple sentiment analysis model based on customer review data, and demonstrate your understanding of the full AI workflow — from data cleaning to evaluation and deployment planning.
+
+---
+
+
+##  Dataset
+
+You are provided with a dataset:  
+`customer_reviews.csv`
+
+**Columns:**
+- `review_id`
+- `review_text`
+- `rating` (1–5 stars)
+
+---
+
+##  Section 1: Data Preprocessing (30%)
+
+**Tasks:**
+1. Load the dataset using **Python (Pandas)**.
+2. Clean the data:
+   - Remove null or duplicate reviews.
+   - Convert all text to lowercase.
+   - Remove punctuation and special characters.
+3. Create a new column `sentiment`:
+   - **Positive** → rating ≥ 4  
+   - **Neutral** → rating = 3  
+   - **Negative** → rating ≤ 2
+
+**Deliverables:**
+- Cleaned dataset: `cleaned_reviews.csv`
+- Brief explanation of preprocessing steps in a markdown cell or text block.
+
+---
+
+##  Section 2: Model Building (40%)
+
+**Tasks:**
+1. Split the cleaned dataset into training (80%) and test (20%) sets.
+2. Train a simple text classification model using one of the following:
+   - Logistic Regression
+   - Naive Bayes
+   - DistilBERT (optional for bonus points)
+3. Evaluate your model using:
+   - Accuracy
+   - Precision
+   - Recall
+   - F1-Score
+
+**Deliverables:**
+- Jupyter Notebook or Python file: `sentiment_model.ipynb`
+- Summary of model performance (in a markdown cell or report)
+
+**Bonus (optional):**
+Use word embeddings such as:
+- TF-IDF
+- Word2Vec
+- Sentence-BERT
+
+---
+
+##  Section 3: Reasoning & Explainability (20%)
+
+Answer the following questions briefly in a file named `explanation.md`:
+
+1. What is **overfitting**, and how can you prevent it?  
+2. If your model predicts **“Positive”** for all reviews, what does that imply?  
+3. How would you improve model accuracy with **limited data**?
+
+---
+
+##  Section 4: Deployment Thought Exercise (10%)
+
+**Scenario:**
+You need to deploy this sentiment analysis model to a mobile app that processes **1,000 reviews per minute**.
+
+**Question:**
+Describe (in 1 short paragraph) how you would design the **deployment pipeline** to ensure scalability and efficiency.
+
+Include your answer in `explanation.md`.
+
+---
+
+##  Setup Instructions
+
+**Requirements:**
+- Python 3.8+
+- Recommended libraries:
+  ```bash
+  pip install pandas scikit-learn numpy matplotlib nltk
+
+## Please Share the github Repo
